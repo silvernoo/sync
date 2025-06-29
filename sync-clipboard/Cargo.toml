@@ -1,0 +1,13 @@
+[package]
+name = "sync-clipboard"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes-gcm = "0.10.3"
+arboard = "3.6.0"
+bincode = "2.0.1"
+clap = { version = "4.5.40", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
+sha2 = "0.10.9"
+tokio = { version = "1.45.1", features = ["full"] }
