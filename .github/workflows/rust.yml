@@ -2,13 +2,8 @@ name: Rust
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-defaults:
- run:
-  working-directory: ./sync-clipboard
+    tags:
+      - 'v*'
 
 jobs:
   release:
